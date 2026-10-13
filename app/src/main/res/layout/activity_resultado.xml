@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Ícono de estado -->
+        <TextView
+            android:id="@+id/tvIconoEstado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎓"
+            android:textSize="60sp"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <!-- Nombre del estudiante -->
+        <TextView
+            android:id="@+id/tvNombreEstudiante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal"
+            android:gravity="center"
+            android:paddingBottom="24dp" />
+
+        <!-- Tarjeta: desglose de notas -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/blanco">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/desglose_notas"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primario"
+                    android:paddingBottom="12dp" />
+
+                <!-- Fila Nota 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/label_nota1"
+                        android:textSize="14sp"
+                        android:textColor="@color/texto_secundario" />
+
+                    <TextView
+                        android:id="@+id/tvNota1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0.00"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/texto_principal"
+                        android:gravity="end" />
+
+                    <TextView
+                        android:id="@+id/tvPonderada1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="= 0.00"
+                        android:textSize="14sp"
+                        android:textColor="@color/verde"
+                        android:gravity="end" />
+                </LinearLayout>
+
+                <!-- Fila Nota 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/label_nota2"
+                        android:textSize="14sp"
+                        android:textColor="@color/texto_secundario" />
+
+                    <TextView
+                        android:id="@+id/tvNota2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0.00"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/texto_principal"
+                        android:gravity="end" />
+
+                    <TextView
+                        android:id="@+id/tvPonderada2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="= 0.00"
+                        android:textSize="14sp"
+                        android:textColor="@color/verde"
+                        android:gravity="end" />
+                </LinearLayout>
+
+                <!-- Fila Nota 3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/label_nota3"
+                        android:textSize="14sp"
+                        android:textColor="@color/texto_secundario" />
+
+                    <TextView
+                        android:id="@+id/tvNota3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0.00"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/texto_principal"
+                        android:gravity="end" />
+
+                    <TextView
+                        android:id="@+id/tvPonderada3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="= 0.00"
+                        android:textSize="14sp"
+                        android:textColor="@color/verde"
+                        android:gravity="end" />
+                </LinearLayout>
+
+                <!-- Fila Nota 4 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/label_nota4"
+                        android:textSize="14sp"
+                        android:textColor="@color/texto_secundario" />
+
+                    <TextView
+                        android:id="@+id/tvNota4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0.00"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/texto_principal"
+                        android:gravity="end" />
+
+                    <TextView
+                        android:id="@+id/tvPonderada4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="= 0.00"
+                        android:textSize="14sp"
+                        android:textColor="@color/verde"
+                        android:gravity="end" />
+                </LinearLayout>
+
+                <!-- Divisor -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divisor"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Nota definitiva -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/nota_definitiva"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/texto_principal" />
+
+                    <TextView
+                        android:id="@+id/tvNotaDefinitiva"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="0.00"
+                        android:textSize="28sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primario"
+                        android:gravity="end" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tarjeta: Estado (Aprobado / Reprobado) -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/verde">
+
+            <TextView
+                android:id="@+id/tvEstado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/estado_aprobado"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/blanco"
+                android:gravity="center"
+                android:padding="16dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Botones -->
+        <Button
+            android:id="@+id/btnOtroEstudiante"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/btn_otro_estudiante"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/primario"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnIrResumen"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/btn_ver_resumen"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/secundario" />
+
+    </LinearLayout>
+</ScrollView>

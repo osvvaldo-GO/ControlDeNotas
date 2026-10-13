@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ControlNotas">
+
+        <!-- Activity principal: ingreso de notas -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activity de resultado individual por estudiante -->
+        <activity
+            android:name=".ResultadoActivity"
+            android:exported="false"
+            android:label="@string/titulo_resultado"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- Activity de resumen general del grupo -->
+        <activity
+            android:name=".ResumenActivity"
+            android:exported="false"
+            android:label="@string/titulo_resumen"
+            android:parentActivityName=".MainActivity" />
+
+    </application>
+
+</manifest>

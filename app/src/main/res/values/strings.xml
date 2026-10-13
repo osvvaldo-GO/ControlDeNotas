@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Nombre de la app -->
+    <string name="app_name">Control de Notas</string>
+    <string name="subtitulo">Programación de Dispositivos Móviles</string>
+
+    <!-- Títulos de Activities -->
+    <string name="titulo_resultado">Resultado del Estudiante</string>
+    <string name="titulo_resumen">Resumen del Grupo</string>
+    <string name="subtitulo_resumen">Estadísticas generales del curso</string>
+
+    <!-- Labels del formulario principal -->
+    <string name="datos_estudiante">Datos del Estudiante</string>
+    <string name="label_nombre">Nombre completo</string>
+    <string name="hint_nombre">Ej: Juan Pérez</string>
+    <string name="ingreso_notas">Ingreso de Notas</string>
+    <string name="rango_notas">Cada nota debe estar entre 0.0 y 5.0</string>
+    <string name="hint_nota">0.0 – 5.0</string>
+
+    <!-- Labels de notas con porcentaje -->
+    <string name="label_nota1">Nota 1  (25%)</string>
+    <string name="label_nota2">Nota 2  (25%)</string>
+    <string name="label_nota3">Nota 3  (30%)</string>
+    <string name="label_nota4">Nota 4  (20%)</string>
+    <string name="info_porcentajes">Distribución: 25% · 25% · 30% · 20% = 100%</string>
+
+    <!-- Contadores en MainActivity -->
+    <string name="label_total">Estudiantes</string>
+    <string name="label_reprobados">Reprobados</string>
+    <string name="label_aprobados">Aprobados</string>
+
+    <!-- Botones -->
+    <string name="btn_calcular">Calcular Nota</string>
+    <string name="btn_ver_resumen">Ver Resumen General</string>
+    <string name="btn_nuevo">Limpiar Formulario</string>
+    <string name="btn_otro_estudiante">Ingresar Otro Estudiante</string>
+    <string name="btn_agregar_mas">Agregar Más Estudiantes</string>
+    <string name="btn_reiniciar">Reiniciar Todo</string>
+
+    <!-- Pantalla de resultado -->
+    <string name="desglose_notas">Desglose de Notas</string>
+    <string name="nota_definitiva">Nota Definitiva</string>
+    <string name="estado_aprobado">✅  APROBADO</string>
+    <string name="estado_reprobado">❌  REPROBADO</string>
+
+    <!-- Pantalla de resumen -->
+    <string name="porcentaje_reprobados">Porcentaje de reprobados</string>
+    <string name="porcentaje_aprobados">Porcentaje de aprobados</string>
+    <string name="lista_estudiantes">Detalle por estudiante</string>
+    <string name="sin_estudiantes">No hay estudiantes registrados aún.</string>
+
+    <!-- Diálogo de confirmación reinicio -->
+    <string name="dialogo_reiniciar_titulo">Reiniciar datos</string>
+    <string name="dialogo_reiniciar_mensaje">¿Está seguro que desea borrar todos los registros? Esta acción no se puede deshacer.</string>
+    <string name="dialogo_si">Sí, reiniciar</string>
+    <string name="dialogo_no">Cancelar</string>
+
+    <!-- Mensajes de error -->
+    <string name="error_nombre_vacio">Ingrese el nombre del estudiante</string>
+    <string name="error_campo_vacio">El campo no puede estar vacío</string>
+    <string name="error_numero_invalido">Ingrese un número válido</string>
+    <string name="error_rango_nota">La nota debe estar entre 0.0 y 5.0</string>
+    <string name="error_sin_datos">No hay estudiantes registrados aún</string>
+
+</resources>

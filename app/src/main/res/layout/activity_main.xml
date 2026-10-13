@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Encabezado -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/primario"
+            android:gravity="center"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/subtitulo"
+            android:textSize="13sp"
+            android:textColor="@color/texto_secundario"
+            android:gravity="center"
+            android:paddingBottom="20dp" />
+
+        <!-- Tarjeta: Datos del estudiante -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/blanco">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/datos_estudiante"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primario"
+                    android:paddingBottom="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_nombre"
+                    android:textSize="14sp"
+                    android:textColor="@color/texto_principal" />
+
+                <EditText
+                    android:id="@+id/etNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_nombre"
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+                    android:background="@drawable/bg_input"
+                    android:padding="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="12dp"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tarjeta: Notas -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/blanco">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ingreso_notas"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primario"
+                    android:paddingBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rango_notas"
+                    android:textSize="12sp"
+                    android:textColor="@color/texto_secundario"
+                    android:paddingBottom="12dp" />
+
+                <!-- Nota 1 (25%) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_nota1"
+                    android:textSize="14sp"
+                    android:textColor="@color/texto_principal" />
+
+                <EditText
+                    android:id="@+id/etNota1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_nota"
+                    android:inputType="numberDecimal"
+                    android:imeOptions="actionNext"
+                    android:background="@drawable/bg_input"
+                    android:padding="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="12dp"
+                    android:textSize="15sp" />
+
+                <!-- Nota 2 (25%) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_nota2"
+                    android:textSize="14sp"
+                    android:textColor="@color/texto_principal" />
+
+                <EditText
+                    android:id="@+id/etNota2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_nota"
+                    android:inputType="numberDecimal"
+                    android:imeOptions="actionNext"
+                    android:background="@drawable/bg_input"
+                    android:padding="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="12dp"
+                    android:textSize="15sp" />
+
+                <!-- Nota 3 (30%) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_nota3"
+                    android:textSize="14sp"
+                    android:textColor="@color/texto_principal" />
+
+                <EditText
+                    android:id="@+id/etNota3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_nota"
+                    android:inputType="numberDecimal"
+                    android:imeOptions="actionNext"
+                    android:background="@drawable/bg_input"
+                    android:padding="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="12dp"
+                    android:textSize="15sp" />
+
+                <!-- Nota 4 (20%) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_nota4"
+                    android:textSize="14sp"
+                    android:textColor="@color/texto_principal" />
+
+                <EditText
+                    android:id="@+id/etNota4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_nota"
+                    android:inputType="numberDecimal"
+                    android:imeOptions="actionDone"
+                    android:background="@drawable/bg_input"
+                    android:padding="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="15sp" />
+
+                <!-- Info porcentajes -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/info_porcentajes"
+                    android:textSize="11sp"
+                    android:textColor="@color/texto_secundario"
+                    android:gravity="center"
+                    android:paddingTop="8dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Botones de acción -->
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/btn_calcular"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/primario"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnVerResumen"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/btn_ver_resumen"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/secundario"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnNuevoEstudiante"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/btn_nuevo"
+            android:textSize="14sp"
+            android:backgroundTint="@color/gris_boton"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Contador en pantalla -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="@color/info_fondo">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_total"
+                        android:textSize="12sp"
+                        android:textColor="@color/texto_secundario" />
+
+                    <TextView
+                        android:id="@+id/tvTotalEstudiantes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="28sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primario" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:background="@color/divisor" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_reprobados"
+                        android:textSize="12sp"
+                        android:textColor="@color/texto_secundario" />
+
+                    <TextView
+                        android:id="@+id/tvReprobados"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="28sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/rojo" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
